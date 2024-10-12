@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../calculator-app-main/images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.google.com/specimen/League+Spartan"
+      rel="stylesheet"
+    />
+    <link id="link" rel="stylesheet" />
+    <title>Calculator</title>
+    <script src="cal.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+    
+
+      <div class="upper"><span id="upper-top">1  2  3</span></div>
+      <h1>calc</h1>
+      <div class="top">
+        
+        <div class="theme"><h2>THEME</h2></div>
+        <div class="theme-toggle">
+          <button id="theme-button" onclick="changeTheme()"></button>
+        </div>
+
+       
+      </div>
+
+      <div class="value">
+        <input type="text" class="display" placeholder="0" />
+      </div>
+
+      <div class="buttons">
+        <button class ="kaku" data-value="7" id="white">7</button>
+        <button class ="kaku" data-value="8" id="white">8</button>
+        <button  class ="kaku"data-value="9" id="white">9</button>
+        <button class ="kaku" class="operator" data-value="DEL" id="del">DEL</button><br />
+        <button class ="kaku" data-value="4" id="white">4</button>
+        <button class ="kaku" data-value="5" id="white">5</button>
+        <button class ="kaku" data-value="6" id="white">6</button>
+        <button class="operator kaku" data-value="+" id="white">+</button><br />
+        <button class ="kaku" data-value="1" id="white">1</button>
+        <button class ="kaku" data-value="2" id="white">2</button>
+        <button class ="kaku" data-value="3" id="white">3</button>
+        <button class ="kaku" class="operator" data-value="-" id="white">-</button><br />
+        <button class ="kaku" data-value="." id="white">.</button>
+        <button class ="kaku" data-value="0" id="white">0</button>
+        <button class ="kaku" class="operator" data-value="/" id="white">/</button>
+        <button class ="kaku" class="operator" data-value="*" id="white">x</button><br />
+        <button class ="kaku" class="operator" data-value="RESET" id="reset" id="long">
+          RESET
+        </button>
+        <button class ="kaku" class="operator" data-value="=" id="red">=</button>
+      </div>
+    </div>
+
+     </body>
+</html>

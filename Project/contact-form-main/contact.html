@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Karla" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact Form</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>Contact Us</h1>
+        <form action="./sucess.html">
+          <label class="line1 label_fname" for="fname"
+            >First Name <span class="span">*</span></label
+          >
+          <label class="line1 label_lastname" for="lname"
+            >Last Name <span class="span">*</span></label
+          ><br />
+          <input
+            class="line2 input_fname"
+            type="text"
+            id="fname"
+            name="firstname"
+            required
+          />
+
+          <input
+            class="line2 input_lname"
+            type="text"
+            id="lname"
+            name="lastname"
+            required
+          /><br />
+          <label class="line1" for="email"
+            >Email Address <span class="span">*</span></label
+          ><br />
+          <input
+            style="width: 92%"
+            class="line2 input_fname"
+            type="text"
+            id="fname"
+            name="firstname"
+            required
+          />
+          <br />
+
+          <label class="line1 label_fname" for="fname"
+            >Query Type <span class="span">*</span></label
+          >
+          <br />
+
+          <button class="line2 btn">
+            <label class="container"
+              >General Enquiry
+              <input type="radio" checked="checked" name="radio" />
+              <span class="checkmark"></span>
+            </label>
+            <!-- <input class="rad" type="radio" id="Gen_Enq" /><span class="gen" -->
+            <!-- >General Enquiry</span -->
+            <!-- > -->
+          </button>
+
+          <button class="line2 input_lname" id="btn">
+            <label class="container"
+              >Support Request
+              <input type="radio" checked="checked" name="radio" />
+              <span class="checkmark"></span>
+            </label>
+            <!-- <input class="rad" type="radio" id="Sup_Req" /><span class="gen"> -->
+            <!-- Support Request</span -->
+            <!-- > -->
+          </button>
+
+          <script src="script.js"></script>
+
+          <br />
+          <label class="line1 label_fname" for="fname"
+            >Messages <span class="span">*</span></label
+          >
+          <br />
+          <textarea class="textA"></textarea>
+          <br />
+          <!-- <p> -->
+          <!-- <input id="check"  type="checkbox" />&nbsp;&nbsp;&nbsp;<span class="consent" -->
+          <!-- >I consent to being contacted by the team <span class="span">*</span></span -->
+          <!-- > -->
+          <!-- </p> -->
+
+          <label class="container1"
+            >I consent to being contacted by the team *
+            <input type="checkbox" checked="checked1" />
+            <span class="checkmark1"></span>
+          </label>
+
+          <button class="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

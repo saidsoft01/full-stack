@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Work+Sans" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>FAQs</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <img class="star" src="/assets/images/icon-star.svg" width="35px" />
+        <br />
+        <h1>FAQs</h1>
+        <div id="container" class="open">
+          <div onclick="toggleContent(1)">
+            <p class="bold">
+              What is Frontend Mentor, and how will it help me?
+            </p>
+            <img
+              class="icon"
+              id="icon1"
+              src="./assets/images/icon-minus.svg"
+              width="20px"
+            />
+          </div>
+          <p id="answer1" class="content open">
+            Frontend Mentor offers realistic coding challenges to help <br />
+            developers improve theoir forntend coding skills with projects in<br />
+            HTML, CSS, and JavaScript. It's suitable for all levels and ideal
+            for<br />
+            portfolio building.<br />
+          </p>
+        </div>
+        <hr />
+        <div id="container" class="open">
+          <div onclick="toggleContent(2)">
+            <p class="bold">Is Frontend Mentor free?</p>
+            <img
+              id="icon2"
+              class="icon"
+              src="./assets/images/icon-plus.svg"
+              width="20px"
+            />
+          </div>
+          <p id="answer2" class="content">
+            Frontend Mentor offers realistic coding challenges to help <br />
+            developers improve theoir forntend coding skills with projects in<br />
+            HTML, CSS, and JavaScript. It's suitable for all levels and ideal
+            for<br />
+            portfolio building.<br />
+          </p>
+        </div>
+        <hr />
+        <div id="container" class="open">
+          <div onclick="toggleContent(3)">
+            <p class="bold">
+              Can I use Frontend Mentor projects in my portfolio?
+            </p>
+            <img
+              id="icon3"
+              class="icon"
+              src="./assets/images/icon-plus.svg"
+              width="20px"
+            />
+          </div>
+          <p id="answer3" class="content">
+            Frontend Mentor offers realistic coding challenges to help <br />
+            developers improve theoir forntend coding skills with projects in<br />
+            HTML, CSS, and JavaScript. It's suitable for all levels and ideal
+            for<br />
+            portfolio building.<br />
+          </p>
+        </div>
+        <hr />
+
+        <div id="container" class="open">
+          <div onclick="toggleContent(4)">
+            <p class="bold">How can I get help if I'm stuck on a challenge?</p>
+            <img
+              id="icon4"
+              class="icon"
+              src="./assets/images/icon-plus.svg"
+              width="20px"
+            />
+          </div>
+          <p id="answer4" class="content">
+            Frontend Mentor offers realistic coding challenges to help <br />
+            developers improve theoir forntend coding skills with projects in<br />
+            HTML, CSS, and JavaScript. It's suitable for all levels and ideal
+            for<br />
+            portfolio building.<br />
+          </p>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
