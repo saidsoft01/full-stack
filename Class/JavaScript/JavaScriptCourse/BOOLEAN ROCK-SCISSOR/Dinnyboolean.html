@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booloan 6a</title>
+  </head>
+  <body>
+    <button
+      onclick="
+      guessGame();
+      "
+    >
+      Guess
+    </button>
+    <br />
+    <br />
+
+    <button
+      class="jabi"
+      onclick="
+    sportyBet()"
+    >
+      Sporty Bet
+    </button>
+
+    <button
+      onclick="
+    betNiaja()"
+    >
+      bet naija
+    </button>
+
+    <script>
+      const hour = 19;
+      const name = "Ola Ahmed";
+      if (hour >= 6 && hour < 12) {
+        console.log("Good morning ", name);
+      } else if (hour >= 12 && hour < 17) {
+        console.log(`Good afternoon, ${name}`);
+      } else if (hour >= 17 && hour <= 19) {
+        console.log("Good evening ", name);
+      } else if ((hour >= 20 && hour < 24) | ((hour >= 0) & (hour < 6))) {
+        console.log(`Good night, ${name}`);
+      }
+
+      const age = 65;
+      const isHoliday = false;
+      if ((age <= 6 || age >= 65) && !isHoliday) {
+        console.log("Discount");
+      } else {
+        console.log("No Discount");
+      }
+      // 6f - 6i
+
+      function guessGame() {
+        const randomNumber = Math.random();
+        let result = "";
+        let guess = "Heads";
+        // if (randomNumber < 0.5) result = "Heads";
+        // else result = "Tails";
+        result = randomNumber < 0.5 ? "Heads" : "Tails";
+        // if (guess === result) console.log("You win");
+        // else console.log("You lose");
+        score = guess === result ? "You won" : "You lose";
+        console.log(result, "-", score);
+      }
+
+      function sportyBet() {
+        let ranDom = Math.floor(Math.random() * 100);
+        predict = "";
+        if (ranDom >= 0 && ranDom < 30) {
+          console.log((predict = "Arsenal will win the game"));
+        } else if (ranDom >= 30 && ranDom < 60) {
+          console.log((predict = "Arsenal will loose the game"));
+        } else if (ranDom >= 60 && ranDom <= 100) {
+          console.log((predict = "Arsenal will draw the game"));
+        }
+      }
+
+      function betNiaja() {
+        let ranDom = Math.ceil(Math.random() * 100);
+        console.log(ranDom)
+      }
+    </script>
+  </body>
+</html>

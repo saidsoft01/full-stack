@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intro To JS</title>
+  </head>
+  <body>
+    <h1 id="title">what the funck</h1>
+
+    <button onclick="document.getElementById('title').style.fontSize = '140px'">
+      Bigger
+    </button>
+
+    <button onclick="showDate()">Show Date</button>
+    <p id="date"></p>
+
+    <script>
+      document.getElementById("title").innerHTML =
+        "Welcome to JavaScript's World";
+      document.getElementById("title").title = "Welcome to my World";
+      document.getElementById("title").style.color = "red";                     // who are you
+      document.write(7 * 10);
+      alert("Hi, Welcome");
+      console.log(6 ** 3);
+      let carName = "Volvo";
+      document.getElementById("title").innerHTML = carName;
+    </script>
+    <script src="./script.js"></script>
+  
+  </body>
+</html>

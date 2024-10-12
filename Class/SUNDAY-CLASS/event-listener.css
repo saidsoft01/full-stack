@@ -1,0 +1,43 @@
+body{
+    background: rgb(54, 72, 81);
+}
+
+#main-heading {
+    text-align: center;
+     color: white;
+}
+.container {
+display: flex;
+margin-left: 20px;
+}
+
+.boxes {
+    border: 1px solid ;
+    color: white;  
+    padding: 30px 5px;
+    height: 100px;
+    width: 110px;
+    border-radius: 10%;
+   
+}
+
+#heading {
+    font-size: 15px;
+    margin-top: 0px;  
+    padding: 0px;
+    margin-left: 15px;
+    
+}
+.box-2, .box-3 {
+    margin-left: 30px;
+}
+button {
+    background-color: rgb(54, 72, 81);
+    border: 1px solid white;
+    color: white;
+    font-size: 10px;
+    padding: 5px 5px;
+    border-radius:4px;
+    margin-top: 5em;
+    margin-left: 3em;
+}

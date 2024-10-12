@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+<script>
+   /* 
+    const product2 = {
+        name: 'shirt',
+        ['delivery-time']: '1 day',
+        rating: {
+            stars: 4.5,
+            count: 87},
+        fun: function function1() {
+            return 'function in object'
+        }
+
+        };   
+
+    console.log(product2['name']);
+    console.log(product2.term = 'soapy');
+    console.log(product2['delivery-time'] = 'love');
+    console.log(product2.rating.count);
+    console.log(product2.fun());
+    console.log(product2);
+    
+    console.log(JSON.stringify(product2))
+    
+    console.log(JSON.parse(JSON.stringify(product2)))
+
+    */
+
+    console.log('hello'.length);
+    console.log('hello'.toUpperCase());
+
+    const object1 = {
+        message: 'hello'
+    };
+// have the same reference//
+    const object2 = object1
+    object1.message = 'Good job'
+    
+    console.log(object1);
+    console.log(object2);
+
+    const object3 = {
+        message: 'Good jobby'
+    };
+    console.log(object1 === object2);
+
+    const object4 = {
+        message: 'Good jobby',
+        price: 799
+    };
+
+    // const message = object4.message;
+
+   const {message, price} = object4;
+
+    
+    console.log(message);
+    console.log(price);
+
+    const object5 = {
+        message,
+       // method: function funtion1() {
+           // console.log('method')
+       // }
+
+        method() {
+            console.log('methodman');
+        }
+
+    };
+
+    console.log(object5)
+    object5.method();
+
+    // LOCAL STORAGE LEARNING LINK
+   // https://www.youtube.com/watch?v=-ZRDZyUjEEI
+
+    localStorage.setItem('accept-cookies', 'true');
+    localStorage.setItem('data',{prop: 1});
+    localStorage.setItem('score', 5);
+    localStorage.setItem('nickname', 'suke');
+
+   // console.log(localStorage.getItem('nickname'));
+
+
+
+    //convert to string
+    
+   // console.log(localStorage.getItem('data'));
+    
+   // console.log(localStorage.setItem('data', JSON.stringify({prop: 1})));
+    
+  //  console.log(localStorage);
+
+    //convert back to object
+    
+ // console.log(JSON.parse(localStorage.getItem('data')));
+
+   // content of local storage as a javescript object   
+   console.log( {...localStorage} );
+
+ // content of local storage as a javescript array 
+  //  console.log( object.values(localStorage) );
+   // console.log( object.keys(localStorage) );
+   // console.log( object.entries(localStorage) );
+
+// remove an item from local storage
+
+localStorage.removeItem('data');
+
+// clear local storage 
+
+// localStorage.clear();
+
+// session storage 
+
+sessionStorage.setItem('age', 7);
+sessionStorage.setItem('name', 'said');
+ console.log(sessionStorage);
+
+
+
+</script>
+</body>
+</html>
