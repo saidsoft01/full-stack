@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: hsl(185, 41%, 84%);
+}
+.container {
+  border-radius: 10px;
+  min-width: 600px;
+  width: 60%;
+  height: 400px;
+  background: #ffffff;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.container > div {
+  width: 48%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+}
+.bill {
+  display: flex;
+  flex-direction: column;
+}
+.bill > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px;
+  border: 1px solid;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+.bill input {
+  width: 85%;
+  outline: none;
+  border: none;
+  font-size: 18px;
+}
+
+.tip-percentage {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tip-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.tip-options div {
+  width: 30%;
+  font-weight: 900;
+  font-size: 20px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: hsl(183, 100%, 15%);
+}
+.tip-options div:hover {
+  background: hsl(172, 67%, 45%);
+  color: black;
+}
+
+.people-count {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.people-count > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px;
+  border: 1px solid;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+.people-count input {
+  width: 85%;
+  outline: none;
+  border: none;
+  font-size: 18px;
+}
+i {
+  color: hsl(185, 41%, 84%);
+}
+
+.output-container {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: hsl(183, 100%, 15%);
+}
+
+.output-container button {
+  background-color: hsl(172, 67%, 45%);
+  height: 40px;
+
+  border-radius: 6px;
+}
+
+#custom input {
+  width: 100%;
+  height: 30px;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+}
+
+.hidden{
+    display: none;
+}
